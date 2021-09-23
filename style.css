@@ -9,23 +9,35 @@
 }
 .default .site_middle {
   background-color: darkmagenta;
-  height: 90vh;
-  position: relative;
+  margin-left: 10%;
 }
 .default .nav {
   background-color: green;
-  height: 10vh;
-  width: 100%;
+  height: calc(100vh - 90vh);
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 90%;
 }
 .default .site_bar {
   background-color: firebrick;
-  height: 90vh;
+  height: calc(100vh - 10vh);
   width: 10%;
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 1;
+}
+.default .contenuto {
+  overflow: auto;
 }
 .default .site_bottom {
   background-color: dodgerblue;
-  height: 10vh;
+  height: calc(100vh - 90vh);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
 }
