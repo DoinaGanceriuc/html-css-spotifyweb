@@ -10,11 +10,20 @@
 .default .site_middle {
   background-color: darkmagenta;
   height: 90vh;
+  position: relative;
+}
+.default .nav {
+  background-color: green;
+  height: 10vh;
+  width: 100%;
 }
 .default .site_bar {
   background-color: firebrick;
   height: 90vh;
   width: 10%;
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 .default .site_bottom {
   background-color: dodgerblue;
