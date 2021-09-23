@@ -37,6 +37,9 @@ img,
 .svg path {
   fill: #595959;
 }
+.svg .user path {
+  fill: white;
+}
 .self {
   align-self: center;
 }
@@ -44,24 +47,26 @@ img,
 Main
 *********************/
 .main_site {
-  margin-left: 10%;
+  /* margin-left: 10%; */
   overflow: auto;
   height: calc(100vh - 10vh);
+  padding-left: 1rem;
 }
 /* nav */
 .nav {
-  height: calc(100vh - 90vh);
+  /*  height: calc(100vh - 90vh); */
   position: fixed;
   right: 0;
   top: 0;
   z-index: 1;
-  width: 90%;
+  width: 100%;
+  text-align: right;
+  padding: 1rem;
 }
 /* site_bar */
 .site_bar {
   background-color: #000000;
   height: calc(100vh - 10vh);
-  width: 10%;
   position: fixed;
   left: 0;
   top: 0;
@@ -69,8 +74,9 @@ Main
   justify-content: space-between;
   flex-direction: column;
 }
-.personal_settings {
-  padding: 1rem 0 0 1rem;
+.personal_settings,
+.profile {
+  padding: 1rem;
 }
 .personal_settings p {
   color: #ffffff;
@@ -85,9 +91,15 @@ Main
   width: 30px;
   margin-right: 0.5rem;
 }
+.home {
+  margin-top: 1rem;
+}
 .grey p,
 .home p {
   font-size: 0.8rem;
+}
+.search {
+  padding: 1rem 0;
 }
 .grey p {
   color: #595959;
@@ -110,7 +122,35 @@ Main
   margin-right: 0.5rem;
   color: #a3a3a3;
 }
-.home,
+.grey .user p {
+  color: white;
+}
+.icon {
+  height: 25px;
+  width: 25px;
+  background-color: #808080;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+.icon svg {
+  height: 20px;
+  width: 100%;
+}
+p.self.size.name {
+  color: white;
+}
+hr {
+  margin: 0.5rem;
+}
+.download {
+  height: 20px;
+  width: 20px;
+  display: block;
+  margin-right: 0.5rem;
+}
+.download svg path {
+  fill: #595959;
+}
 .contenuto {
   margin-top: calc(100vh - 90vh);
 }
