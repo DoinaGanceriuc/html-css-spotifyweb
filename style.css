@@ -10,16 +10,33 @@ body {
 /* default */
 .default .container {
   background-color: darkblue;
-  height: 100vh;
 }
 .default .main_site {
   background-color: darkmagenta;
+}
+.default .nav {
+  background-color: green;
+}
+.default .site_bar {
+  background-color: firebrick;
+}
+.default .footer_site {
+  background-color: dodgerblue;
+}
+/* utility */
+.container {
+  height: 100vh;
+}
+/********************
+Main
+*********************/
+.main_site {
   margin-left: 10%;
   overflow: auto;
   height: calc(100vh - 10vh);
 }
-.default .nav {
-  background-color: green;
+/* nav */
+.nav {
   height: calc(100vh - 90vh);
   position: fixed;
   right: 0;
@@ -27,8 +44,8 @@ body {
   z-index: 1;
   width: 90%;
 }
-.default .site_bar {
-  background-color: firebrick;
+/* site_bar */
+.site_bar {
   height: calc(100vh - 10vh);
   width: 10%;
   position: fixed;
@@ -36,8 +53,13 @@ body {
   top: 0;
   z-index: 1;
 }
-.default .footer_site {
-  background-color: dodgerblue;
+.contenuto {
+  margin-top: calc(100vh - 90vh);
+}
+/********************
+Footer
+*********************/
+.footer_site {
   height: calc(100vh - 90vh);
   position: fixed;
   left: 0;
