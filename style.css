@@ -1,13 +1,18 @@
+/* reset */
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
+body {
+  font-family: "Montserrat", sans-serif;
+}
+/* default */
 .default .container {
   background-color: darkblue;
   height: 100vh;
 }
-.default .site_middle {
+.default .main_site {
   background-color: darkmagenta;
   margin-left: 10%;
   overflow: auto;
@@ -31,10 +36,7 @@
   top: 0;
   z-index: 1;
 }
-/* .default .contenuto {
-  overflow: auto;
-} */
-.default .site_bottom {
+.default .footer_site {
   background-color: dodgerblue;
   height: calc(100vh - 90vh);
   position: fixed;
