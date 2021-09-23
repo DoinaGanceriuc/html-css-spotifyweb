@@ -8,24 +8,37 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 /* default */
-.default .container {
+.debug .container {
   background-color: darkblue;
 }
-.default .main_site {
+.debug .main_site {
   background-color: darkmagenta;
 }
-.default .nav {
+.debug .nav {
   background-color: green;
 }
-.default .site_bar {
+.debug .site_bar {
   background-color: firebrick;
 }
-.default .footer_site {
+.debug .footer_site {
   background-color: dodgerblue;
 }
 /* utility */
 .container {
   height: 100vh;
+}
+.flex {
+  display: flex;
+}
+img,
+.svg {
+  display: block;
+}
+.svg path {
+  fill: #595959;
+}
+.self {
+  align-self: center;
 }
 /********************
 Main
@@ -46,13 +59,58 @@ Main
 }
 /* site_bar */
 .site_bar {
+  background-color: #000000;
   height: calc(100vh - 10vh);
   width: 10%;
   position: fixed;
   left: 0;
   top: 0;
   z-index: 1;
+  justify-content: space-between;
+  flex-direction: column;
 }
+.personal_settings {
+  padding: 1rem 0 0 1rem;
+}
+.personal_settings p {
+  color: #ffffff;
+}
+.logo_spotify {
+  height: 50px;
+  margin-right: 0.5rem;
+}
+.icons img,
+.icons .svg {
+  height: 30px;
+  width: 30px;
+  margin-right: 0.5rem;
+}
+.grey p,
+.home p {
+  font-size: 0.8rem;
+}
+.grey p {
+  color: #595959;
+}
+.playlist {
+  margin-top: 1rem;
+}
+.playlist p {
+  padding: 0.5rem 0;
+}
+.playlist .secondary_title {
+  font-size: 1rem;
+  color: #ffffff;
+}
+.playlist .self {
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+.grey i {
+  margin-right: 0.5rem;
+  color: #a3a3a3;
+}
+.home,
 .contenuto {
   margin-top: calc(100vh - 90vh);
 }

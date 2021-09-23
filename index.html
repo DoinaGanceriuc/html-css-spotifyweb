@@ -12,253 +12,107 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
-  <body class="default">
+  <body class="debug">
     <div class="container">
       <main class="main_site">
         <div class="nav"></div>
         <!-- /.nav -->
-        <div class="site_bar"></div>
+        <div class="site_bar flex">
+          <div class="personal_settings">
+            <div class="flex">
+              <img class="logo_spotify" src="./img/logo-small.svg" alt="" />
+              <p class="self">Spotify</p>
+            </div>
+            <div class="home flex icons">
+              <img src="./img/home.svg" alt="" />
+              <p class="self">Home</p>
+            </div>
+            <div class="flex icons grey">
+              <div class="svg">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                    fill="#ffffff"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p class="self">Cerca</p>
+            </div>
+            <div class="flex icons grey">
+              <div class="svg">
+                <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </div>
+              <p class="self size">La tua libreria</p>
+            </div>
+            <div class="playlist grey">
+              <p class="secondary_title">PLAYLIST</p>
+              <div class="flex icons grey">
+                <i class="fas fa-plus-square fa-3x"></i>
+                <p class="self">Crea Playlist</p>
+              </div>
+              <p>Nome Playlist</p>
+              <p>Nome Playlist</p>
+              <p>Nome Playlist</p>
+              <p>Nome Playlist</p>
+              <p>Nome Playlist</p>
+              <p>Nome Playlist</p>
+              <p>Nome Playlist</p>
+            </div>
+          </div>
+          <!-- /.personal_settings -->
+          <div class="profile">
+            <div class="flex icons grey">
+              <div class="svg">
+                <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                  <title>Download icon</title>
+                  <path
+                    d="M12 11.657V6h-1v5.65L9.076 9.414l-.758.65 3.183 3.702 3.195-3.7-.758-.653L12 11.657zM11.5 2C7.358 2 4 5.358 4 9.5c0 4.142 3.358 7.5 7.5 7.5 4.142 0 7.5-3.358 7.5-7.5C19 5.358 15.642 2 11.5 2zm0 14C7.916 16 5 13.084 5 9.5S7.916 3 11.5 3 18 5.916 18 9.5 15.084 16 11.5 16z"
+                    fill="#ffffff"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p class="self size">La tua libreria</p>
+            </div>
+            <hr />
+            <div class="flex icons grey">
+              <div class="svg">
+                <svg viewBox="0 0 80 90" xmlns="http://www.w3.org/2000/svg">
+                  <title>User Icon</title>
+                  <path
+                    d="M67.74 61.78l-14.5-8.334c-.735-.422-1.24-1.145-1.385-1.98-.145-.835.088-1.685.638-2.33l5.912-6.93c3.747-4.378 5.81-9.967 5.81-15.737v-2.256c0-6.668-2.792-13.108-7.658-17.67C51.622 1.92 45.17-.386 38.392.054c-12.677.82-22.607 11.772-22.607 24.934v1.483c0 5.77 2.063 11.36 5.81 15.736l5.912 6.933c.55.644.783 1.493.638 2.33-.143.834-.648 1.556-1.383 1.98l-14.494 8.33C4.7 66.077 0 74.15 0 82.844v6.76h3.333v-6.76c0-7.5 4.055-14.46 10.59-18.174l14.5-8.334c1.597-.918 2.692-2.487 3.007-4.302.315-1.815-.19-3.66-1.387-5.06l-5.913-6.936c-3.23-3.775-5.01-8.594-5.01-13.57v-1.484c0-11.41 8.562-20.9 19.488-21.608 5.85-.377 11.415 1.61 15.67 5.598 4.26 3.992 6.605 9.404 6.605 15.24v2.254c0 4.976-1.778 9.796-5.01 13.57l-5.915 6.935c-1.195 1.4-1.7 3.246-1.386 5.06.313 1.816 1.41 3.385 3.008 4.303l14.507 8.338c6.525 3.71 10.58 10.67 10.58 18.17v6.76H80v-6.76c0-8.695-4.7-16.768-12.26-21.063z"
+                    fill="#ffffff"
+                    fill-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <p class="self size">John Doe</p>
+            </div>
+            <!-- /.profile -->
+          </div>
+        </div>
         <!-- /.site_bar -->
         <div class="contenuto">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            nostrum obcaecati atque sequi eum officia quisquam doloremque neque
-            temporibus! Omnis quis eius maiores ab dolorum distinctio, corporis
-            alias nobis debitis. Ab, veniam soluta cupiditate beatae cum, sequi
-            voluptatem distinctio, corporis sunt fugit impedit aperiam sapiente
-            delectus suscipit ad rem rerum nisi provident pariatur iste ratione
-            perspiciatis itaque. Nulla deleniti temporibus, autem illo omnis
-            deserunt architecto nostrum magni totam odio earum fugiat quo eum
-            soluta, laboriosam sed provident culpa fuga similique porro quasi.
-            Impedit nulla, consequuntur debitis vero aut voluptates neque iste
-            similique. Doloribus itaque tenetur autem? Quas tempore expedita
-            doloribus error aut repudiandae inventore, veritatis cumque libero
-            velit accusamus soluta assumenda, vitae consequatur, praesentium
-            numquam quae ducimus quaerat repellendus pariatur molestias rerum
-            nulla. Placeat aliquam ullam unde, quaerat laborum, totam excepturi
-            quisquam, id voluptatum itaque blanditiis libero voluptas! Vel amet
-            sequi accusamus totam, atque ea mollitia? Cumque nemo culpa,
-            pariatur inventore soluta quo hic eaque quam, officia obcaecati
-            repellat voluptate nostrum ad id ab voluptatum nihil exercitationem
-            vel eum ea. Eum repellat fuga nulla tempore voluptate labore autem
-            omnis, mollitia corrupti rem voluptatum, neque officiis. Adipisci
-            praesentium porro magnam natus excepturi repellat ipsa, quod
-            accusantium ipsum consequatur architecto a recusandae, dolorum unde!
-            Velit rerum magni ipsam officiis nobis minus non alias iste
-            voluptatum veniam praesentium quibusdam et ab, repellendus assumenda
-            a, minima consequatur. Amet impedit sed nostrum minima cumque atque
-            neque sit laborum ipsa, alias, voluptatibus ad, quas adipisci itaque
-            omnis natus quisquam dolorum illum similique architecto cupiditate
-            minus molestias! Suscipit veniam, tenetur tempore voluptatum natus
-            fuga non porro deserunt, repellat rem at maiores culpa mollitia
-            voluptates eum, iste neque. Debitis perferendis nostrum ea labore
-            veritatis delectus minima doloremque, cumque nam fugiat! Maxime
-            quisquam maiores delectus veniam optio dolore illum vel, ipsam neque
-            sequi eos sapiente nihil, ducimus, dignissimos cum dolor? Itaque
-            nam, molestiae, exercitationem, ducimus aliquid at quidem aperiam
-            ratione consectetur natus possimus saepe delectus error mollitia
-            dolorem facere? Inventore in maiores asperiores! Expedita, veritatis
-            repudiandae sunt dolorem possimus voluptatum, porro asperiores saepe
-            nostrum assumenda dignissimos incidunt nihil? Iure, omnis aspernatur
-            eos quas dolore tenetur quibusdam illo distinctio nihil dolorum
-            dicta! Aliquam tempore placeat soluta voluptatum excepturi quisquam
-            laborum id perspiciatis aliquid consequuntur iusto similique ducimus
-            minus tenetur facilis maxime sunt repellendus ipsum eveniet error,
-            laudantium est? Veniam voluptate minima maxime sint ad tempora!
-            Odio, aliquam vel? Cupiditate commodi debitis recusandae,
-            repudiandae qui animi unde molestiae officia eius iusto et earum
-            maiores illum nobis modi pariatur labore nihil corporis atque minus
-            enim neque. Adipisci harum magni assumenda, porro doloribus non
-            accusantium, architecto, saepe exercitationem id enim! Error sunt
-            reiciendis ullam nihil animi, voluptate nulla voluptas distinctio
-            omnis nobis at ipsum assumenda earum velit repellat perferendis
-            perspiciatis temporibus eaque quos modi ipsam! Saepe libero nostrum
-            aut labore suscipit? Eum accusantium doloribus, enim earum est
-            commodi, officiis in quisquam tempora dolore illo accusamus non a
-            tempore tenetur, minima eligendi ea quasi explicabo natus ullam
-            inventore! Consectetur dolore et sed exercitationem nobis magnam,
-            ducimus reiciendis odit, placeat nulla laborum eos ipsum provident
-            praesentium aliquam officiis! Fugit magni illo consequuntur officiis
-            corporis nihil sapiente. Placeat recusandae quis nulla perspiciatis
-            dolores architecto quidem harum pariatur sint. Aspernatur nisi
-            consequuntur commodi natus, libero dolorum amet odit, nesciunt
-            dolores omnis sed et esse laborum quidem? Reprehenderit molestiae
-            corporis odio doloremque impedit, doloribus at atque ipsum placeat
-            tenetur consectetur provident quisquam possimus, earum
-            necessitatibus sunt distinctio mollitia, pariatur nemo sed ea?
-            Reprehenderit molestias, ipsa nesciunt inventore omnis placeat
-            numquam sapiente culpa esse cum mollitia enim praesentium
-            consectetur minima amet saepe non? Necessitatibus officia laudantium
-            consequatur! Possimus quas assumenda aliquid earum autem suscipit
-            sunt adipisci animi aut fugiat hic iusto est facere nihil, expedita
-            harum nobis eveniet cupiditate accusamus alias quibusdam quasi
-            veritatis, esse praesentium! Impedit rerum, sequi architecto natus
-            suscipit ad minus quidem eaque. Odio dolor repellendus ullam
-            deserunt quis laborum. Est necessitatibus reprehenderit magni porro
-            facilis earum modi, maxime labore qui, officia mollitia, illo
-            officiis! Ducimus excepturi laboriosam esse praesentium quia totam
-            earum ad adipisci provident est in voluptatum, omnis consequuntur!
-            Eaque eum repudiandae ea? Aliquam aut ipsum, dolor repellendus eos
-            possimus facere nulla laudantium autem adipisci saepe a sapiente
-            nemo aspernatur odio? Voluptatibus earum magni, quos neque
-            consequuntur deleniti fugit molestiae rem quae iusto tempore tenetur
-            vero reiciendis suscipit excepturi ea veritatis officia. Quisquam
-            nobis natus est maiores asperiores quia, dolorem corrupti
-            voluptatibus numquam incidunt tempore eum ratione dolor velit quidem
-            officia mollitia beatae labore, eligendi animi saepe? Deserunt vero
-            perspiciatis commodi doloribus aspernatur dignissimos. Dolor eveniet
-            tempore unde minus molestiae, asperiores esse officiis harum minima
-            nostrum nobis illo veniam consectetur voluptate commodi dolorem.
-            Quidem incidunt molestiae hic magni pariatur. Repudiandae, eligendi.
-            Soluta autem aspernatur, fugiat tempora eligendi cum veritatis.
-            Suscipit aut assumenda ab sequi, at et qui quos repellat consequatur
-            deserunt totam optio distinctio vero iste dolores laboriosam hic
-            fuga accusamus nobis eius? Suscipit optio totam libero accusamus
-            praesentium, nobis culpa in? Earum, architecto ipsam fugit ex minima
-            neque maxime fuga iure sed eveniet, magnam quibusdam eos placeat
-            voluptatibus debitis, accusantium repudiandae deleniti asperiores
-            illo. Sunt fugit possimus quibusdam autem ad assumenda doloribus
-            aperiam architecto illo vel excepturi voluptatum deleniti commodi
-            quas expedita, odit obcaecati ex eum veniam unde rem facilis. Aut
-            placeat, asperiores iure suscipit dolor quidem nemo ipsum voluptates
-            fugiat voluptate sapiente atque dolores dignissimos impedit ab
-            quibusdam minima cum alias possimus! Laudantium beatae,
-            necessitatibus iste laborum aliquid earum eum culpa facilis, saepe
-            atque suscipit aspernatur id? Ea molestiae magni, aspernatur
-            explicabo eveniet hic, asperiores quisquam quas aliquid totam
-            officiis numquam deleniti facere fuga ipsam dolore, consectetur in
-            voluptatem quis culpa suscipit aliquam voluptate odio odit! Deleniti
-            dolores aspernatur architecto est doloremque, amet iste cupiditate
-            dignissimos asperiores quod ullam temporibus quam dolorem facere
-            error recusandae illo provident nemo. Non laudantium sunt placeat
-            sapiente ea eligendi obcaecati voluptas accusantium commodi rerum
-            ipsam assumenda minima quia, temporibus neque, repellendus nulla
-            labore iste perspiciatis consequuntur! Commodi fuga, praesentium
-            delectus nihil numquam nesciunt libero ab veniam maxime ratione
-            atque possimus magnam alias, autem, officia est. Voluptates
-            doloribus omnis perspiciatis odio illum soluta nulla reiciendis
-            obcaecati corporis.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
-            nostrum obcaecati atque sequi eum officia quisquam doloremque neque
-            temporibus! Omnis quis eius maiores ab dolorum distinctio, corporis
-            alias nobis debitis. Ab, veniam soluta cupiditate beatae cum, sequi
-            voluptatem distinctio, corporis sunt fugit impedit aperiam sapiente
-            delectus suscipit ad rem rerum nisi provident pariatur iste ratione
-            perspiciatis itaque. Nulla deleniti temporibus, autem illo omnis
-            deserunt architecto nostrum magni totam odio earum fugiat quo eum
-            soluta, laboriosam sed provident culpa fuga similique porro quasi.
-            Impedit nulla, consequuntur debitis vero aut voluptates neque iste
-            similique. Doloribus itaque tenetur autem? Quas tempore expedita
-            doloribus error aut repudiandae inventore, veritatis cumque libero
-            velit accusamus soluta assumenda, vitae consequatur, praesentium
-            numquam quae ducimus quaerat repellendus pariatur molestias rerum
-            nulla. Placeat aliquam ullam unde, quaerat laborum, totam excepturi
-            quisquam, id voluptatum itaque blanditiis libero voluptas! Vel amet
-            sequi accusamus totam, atque ea mollitia? Cumque nemo culpa,
-            pariatur inventore soluta quo hic eaque quam, officia obcaecati
-            repellat voluptate nostrum ad id ab voluptatum nihil exercitationem
-            vel eum ea. Eum repellat fuga nulla tempore voluptate labore autem
-            omnis, mollitia corrupti rem voluptatum, neque officiis. Adipisci
-            praesentium porro magnam natus excepturi repellat ipsa, quod
-            accusantium ipsum consequatur architecto a recusandae, dolorum unde!
-            Velit rerum magni ipsam officiis nobis minus non alias iste
-            voluptatum veniam praesentium quibusdam et ab, repellendus assumenda
-            a, minima consequatur. Amet impedit sed nostrum minima cumque atque
-            neque sit laborum ipsa, alias, voluptatibus ad, quas adipisci itaque
-            omnis natus quisquam dolorum illum similique architecto cupiditate
-            minus molestias! Suscipit veniam, tenetur tempore voluptatum natus
-            fuga non porro deserunt, repellat rem at maiores culpa mollitia
-            voluptates eum, iste neque. Debitis perferendis nostrum ea labore
-            veritatis delectus minima doloremque, cumque nam fugiat! Maxime
-            quisquam maiores delectus veniam optio dolore illum vel, ipsam neque
-            sequi eos sapiente nihil, ducimus, dignissimos cum dolor? Itaque
-            nam, molestiae, exercitationem, ducimus aliquid at quidem aperiam
-            ratione consectetur natus possimus saepe delectus error mollitia
-            dolorem facere? Inventore in maiores asperiores! Expedita, veritatis
-            repudiandae sunt dolorem possimus voluptatum, porro asperiores saepe
-            nostrum assumenda dignissimos incidunt nihil? Iure, omnis aspernatur
-            eos quas dolore tenetur quibusdam illo distinctio nihil dolorum
-            dicta! Aliquam tempore placeat soluta voluptatum excepturi quisquam
-            laborum id perspiciatis aliquid consequuntur iusto similique ducimus
-            minus tenetur facilis maxime sunt repellendus ipsum eveniet error,
-            laudantium est? Veniam voluptate minima maxime sint ad tempora!
-            Odio, aliquam vel? Cupiditate commodi debitis recusandae,
-            repudiandae qui animi unde molestiae officia eius iusto et earum
-            maiores illum nobis modi pariatur labore nihil corporis atque minus
-            enim neque. Adipisci harum magni assumenda, porro doloribus non
-            accusantium, architecto, saepe exercitationem id enim! Error sunt
-            reiciendis ullam nihil animi, voluptate nulla voluptas distinctio
-            omnis nobis at ipsum assumenda earum velit repellat perferendis
-            perspiciatis temporibus eaque quos modi ipsam! Saepe libero nostrum
-            aut labore suscipit? Eum accusantium doloribus, enim earum est
-            commodi, officiis in quisquam tempora dolore illo accusamus non a
-            tempore tenetur, minima eligendi ea quasi explicabo natus ullam
-            inventore! Consectetur dolore et sed exercitationem nobis magnam,
-            ducimus reiciendis odit, placeat nulla laborum eos ipsum provident
-            praesentium aliquam officiis! Fugit magni illo consequuntur officiis
-            corporis nihil sapiente. Placeat recusandae quis nulla perspiciatis
-            dolores architecto quidem harum pariatur sint. Aspernatur nisi
-            consequuntur commodi natus, libero dolorum amet odit, nesciunt
-            dolores omnis sed et esse laborum quidem? Reprehenderit molestiae
-            corporis odio doloremque impedit, doloribus at atque ipsum placeat
-            tenetur consectetur provident quisquam possimus, earum
-            necessitatibus sunt distinctio mollitia, pariatur nemo sed ea?
-            Reprehenderit molestias, ipsa nesciunt inventore omnis placeat
-            numquam sapiente culpa esse cum mollitia enim praesentium
-            consectetur minima amet saepe non? Necessitatibus officia laudantium
-            consequatur! Possimus quas assumenda aliquid earum autem suscipit
-            sunt adipisci animi aut fugiat hic iusto est facere nihil, expedita
-            harum nobis eveniet cupiditate accusamus alias quibusdam quasi
-            veritatis, esse praesentium! Impedit rerum, sequi architecto natus
-            suscipit ad minus quidem eaque. Odio dolor repellendus ullam
-            deserunt quis laborum. Est necessitatibus reprehenderit magni porro
-            facilis earum modi, maxime labore qui, officia mollitia, illo
-            officiis! Ducimus excepturi laboriosam esse praesentium quia totam
-            earum ad adipisci provident est in voluptatum, omnis consequuntur!
-            Eaque eum repudiandae ea? Aliquam aut ipsum, dolor repellendus eos
-            possimus facere nulla laudantium autem adipisci saepe a sapiente
-            nemo aspernatur odio? Voluptatibus earum magni, quos neque
-            consequuntur deleniti fugit molestiae rem quae iusto tempore tenetur
-            vero reiciendis suscipit excepturi ea veritatis officia. Quisquam
-            nobis natus est maiores asperiores quia, dolorem corrupti
-            voluptatibus numquam incidunt tempore eum ratione dolor velit quidem
-            officia mollitia beatae labore, eligendi animi saepe? Deserunt vero
-            perspiciatis commodi doloribus aspernatur dignissimos. Dolor eveniet
-            tempore unde minus molestiae, asperiores esse officiis harum minima
-            nostrum nobis illo veniam consectetur voluptate commodi dolorem.
-            Quidem incidunt molestiae hic magni pariatur. Repudiandae, eligendi.
-            Soluta autem aspernatur, fugiat tempora eligendi cum veritatis.
-            Suscipit aut assumenda ab sequi, at et qui quos repellat consequatur
-            deserunt totam optio distinctio vero iste dolores laboriosam hic
-            fuga accusamus nobis eius? Suscipit optio totam libero accusamus
-            praesentium, nobis culpa in? Earum, architecto ipsam fugit ex minima
-            neque maxime fuga iure sed eveniet, magnam quibusdam eos placeat
-            voluptatibus debitis, accusantium repudiandae deleniti asperiores
-            illo. Sunt fugit possimus quibusdam autem ad assumenda doloribus
-            aperiam architecto illo vel excepturi voluptatum deleniti commodi
-            quas expedita, odit obcaecati ex eum veniam unde rem facilis. Aut
-            placeat, asperiores iure suscipit dolor quidem nemo ipsum voluptates
-            fugiat voluptate sapiente atque dolores dignissimos impedit ab
-            quibusdam minima cum alias possimus! Laudantium beatae,
-            necessitatibus iste laborum aliquid earum eum culpa facilis, saepe
-            atque suscipit aspernatur id? Ea molestiae magni, aspernatur
-            explicabo eveniet hic, asperiores quisquam quas aliquid totam
-            officiis numquam deleniti facere fuga ipsam dolore, consectetur in
-            voluptatem quis culpa suscipit aliquam voluptate odio odit! Deleniti
-            dolores aspernatur architecto est doloremque, amet iste cupiditate
-            dignissimos asperiores quod ullam temporibus quam dolorem facere
-            error recusandae illo provident nemo. Non laudantium sunt placeat
-            sapiente ea eligendi obcaecati voluptas accusantium commodi rerum
-            ipsam assumenda minima quia, temporibus neque, repellendus nulla
-            labore iste perspiciatis consequuntur! Commodi fuga, praesentium
-            delectus nihil numquam nesciunt libero ab veniam maxime ratione
-            atque possimus magnam alias, autem, officia est. Voluptates
-            doloribus omnis perspiciatis odio illum soluta nulla reiciendis
-            obcaecati corporis.
-          </p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et deserunt
+          placeat, quasi iure iusto doloremque nostrum! Saepe ipsam facere quos
+          voluptates non tenetur natus, facilis cupiditate minus adipisci
+          corporis esse fuga excepturi quam earum quibusdam cumque vero alias
+          repellendus molestias perspiciatis perferendis, mollitia eum error!
+          Odit consectetur in voluptates neque!
         </div>
         <!-- /.contenuto -->
       </main>
