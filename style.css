@@ -10,6 +10,8 @@
 .default .site_middle {
   background-color: darkmagenta;
   margin-left: 10%;
+  overflow: auto;
+  height: calc(100vh - 10vh);
 }
 .default .nav {
   background-color: green;
@@ -29,9 +31,9 @@
   top: 0;
   z-index: 1;
 }
-.default .contenuto {
+/* .default .contenuto {
   overflow: auto;
-}
+} */
 .default .site_bottom {
   background-color: dodgerblue;
   height: calc(100vh - 90vh);
