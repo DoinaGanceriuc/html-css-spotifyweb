@@ -246,12 +246,9 @@ Footer
   margin: 0 0.5rem;
   color: #595959;
 }
-<<<<<<< HEAD
+
 .footer_middle i,
 .footer_right i {
-=======
-.footer_middle i {
->>>>>>> 8b251f9001f9b46eec01e2e5f8038eb725f90f6e
   color: #ffffff;
   margin: 0 1rem;
 }
@@ -277,10 +274,7 @@ Footer
   height: 5px;
   background-color: #c1c1c1;
   width: 25%;
-<<<<<<< HEAD
 }
 .footer_right .full_progressbar {
   width: 5rem;
-=======
->>>>>>> 8b251f9001f9b46eec01e2e5f8038eb725f90f6e
 }
