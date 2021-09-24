@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-y: hidden;
 }
 /* debug */
 .debug .container {
@@ -42,6 +43,35 @@ img,
 }
 .self {
   align-self: center;
+}
+.line::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: #74a82a;
+  text-align: center;
+  margin: auto;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  padding: 1rem;
+}
+h2,
+h3 {
+  padding-bottom: 1rem;
+}
+.col_16 {
+  width: 16.66%;
+  float: left;
+  padding: 0.5rem;
+}
+.album {
+  width: 100%;
 }
 /********************
 Main
@@ -155,6 +185,8 @@ hr {
   background-color: #141922;
   color: white;
   height: calc(100vh - 20vh);
+  width: 100%;
+  overflow: auto;
 }
 .menu {
   text-align: center;
@@ -169,14 +201,79 @@ hr {
   font-size: 0.8rem;
   font-weight: 900;
 }
+.artists {
+  text-align: center;
+  padding: 1rem;
+}
+.artists p,
+.suggerimenti {
+  font-size: 0.8rem;
+  color: #595959;
+}
+.suggerimenti {
+  padding-bottom: 0.5rem;
+}
 /********************
 Footer
 *********************/
 .footer_site {
   height: calc(100vh - 90vh);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
+  width: 100vw;
+  background-color: #282828;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.footer_site img {
+  height: 50px;
+}
+.footer_left {
+  align-items: center;
+}
+.footer_left_song {
+  margin: 0 1rem;
+}
+.footer_left h4 {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.footer_left p {
+  font-size: 0.7rem;
+  color: #595959;
+}
+.footer_left i {
+  margin: 0 0.5rem;
+  color: #595959;
+}
+.footer_middle i,
+.footer_right i {
+  color: #ffffff;
+  margin: 0 1rem;
+}
+.play {
+  padding: 0 4rem 1rem 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.time p {
+  color: #ffffff;
+  font-size: 0.6rem;
+  padding: 0 1rem 0 1rem;
+}
+.full_progressbar {
+  height: 5px;
+  background-color: #5a5a5a;
   width: 100%;
+  align-self: center;
+  position: relative;
+  cursor: pointer;
+}
+.progressbar {
+  height: 5px;
+  background-color: #c1c1c1;
+  width: 25%;
+}
+.footer_right .full_progressbar {
+  width: 5rem;
 }
