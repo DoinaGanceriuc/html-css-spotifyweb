@@ -246,7 +246,8 @@ Footer
   margin: 0 0.5rem;
   color: #595959;
 }
-.footer_middle i {
+.footer_middle i,
+.footer_right i {
   color: #ffffff;
   margin: 0 1rem;
 }
@@ -272,4 +273,23 @@ Footer
   height: 5px;
   background-color: #c1c1c1;
   width: 25%;
+}
+.hidden_progressbar {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.full_progressbar:hover .progressbar {
+  background-color: #74a82a;
+}
+.full_progressbar:hover .hidden_progressbar {
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.footer_right .full_progressbar {
+  width: 5rem;
 }
