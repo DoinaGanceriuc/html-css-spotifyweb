@@ -10,7 +10,7 @@ body {
 }
 /* debug */
 .debug .container {
-  background-color: darkblue;
+  background-color: blue;
 }
 .debug .main_site {
   background-color: darkmagenta;
