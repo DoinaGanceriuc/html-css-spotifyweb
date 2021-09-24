@@ -204,9 +204,13 @@ hr {
   text-align: center;
   padding: 1rem;
 }
-.artists p {
+.artists p,
+.suggerimenti {
   font-size: 0.8rem;
   color: #595959;
+}
+.suggerimenti {
+  padding-bottom: 0.5rem;
 }
 /********************
 Footer
