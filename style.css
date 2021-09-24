@@ -217,9 +217,31 @@ Footer
 *********************/
 .footer_site {
   height: calc(100vh - 90vh);
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 1;
-  width: 100%;
+  width: 100vw;
+  background-color: #282828;
+  align-items: center;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.footer_site img {
+  height: 50px;
+}
+.footer_left {
+  align-items: center;
+}
+.footer_left_song {
+  margin: 0 1rem;
+}
+.footer_left h4 {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.footer_left p {
+  font-size: 0.7rem;
+  color: #595959;
+}
+.footer_left i {
+  margin: 0 0.5rem;
+  color: #595959;
 }
