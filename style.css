@@ -43,6 +43,31 @@ img,
 .self {
   align-self: center;
 }
+.line::after {
+  content: "";
+  display: block;
+  width: 35px;
+  height: 2px;
+  background-color: #74a82a;
+  text-align: center;
+  margin: auto;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row {
+  padding: 1rem;
+}
+.col_16 {
+  width: 16.66%;
+  float: left;
+  padding: 0.5rem;
+}
+.album {
+  width: 100%;
+}
 /********************
 Main
 *********************/
