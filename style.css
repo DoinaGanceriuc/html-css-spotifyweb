@@ -60,6 +60,10 @@ img,
 .row {
   padding: 1rem;
 }
+h2,
+h3 {
+  padding-bottom: 1rem;
+}
 .col_16 {
   width: 16.66%;
   float: left;
@@ -193,6 +197,14 @@ hr {
   color: #595959;
   font-size: 0.8rem;
   font-weight: 900;
+}
+.artists {
+  text-align: center;
+  padding: 1rem;
+}
+.artists p {
+  font-size: 0.8rem;
+  color: #595959;
 }
 /********************
 Footer
