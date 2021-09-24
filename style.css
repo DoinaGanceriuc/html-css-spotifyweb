@@ -184,6 +184,8 @@ hr {
   background-color: #141922;
   color: white;
   height: calc(100vh - 20vh);
+  width: 100%;
+  overflow: auto;
 }
 .menu {
   text-align: center;
