@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
+  overflow-y: hidden;
 }
 /* debug */
 .debug .container {
@@ -244,4 +245,31 @@ Footer
 .footer_left i {
   margin: 0 0.5rem;
   color: #595959;
+}
+.footer_middle i {
+  color: #ffffff;
+  margin: 0 1rem;
+}
+.play {
+  padding: 0 4rem 1rem 4rem;
+  align-items: center;
+  justify-content: center;
+}
+.time p {
+  color: #ffffff;
+  font-size: 0.6rem;
+  padding: 0 1rem 0 1rem;
+}
+.full_progressbar {
+  height: 5px;
+  background-color: #5a5a5a;
+  width: 100%;
+  align-self: center;
+  position: relative;
+  cursor: pointer;
+}
+.progressbar {
+  height: 5px;
+  background-color: #c1c1c1;
+  width: 25%;
 }
