@@ -509,3 +509,42 @@ Footer
     padding: 0 0.3rem;
   }
 }
+
+/* media query height */
+@media screen and (max-height: 1000px) {
+  .main_site {
+    max-height: calc(100vh - 100px);
+  }
+  .nav,
+  .footer_site {
+    height: 100px;
+  }
+  .songs {
+    height: calc(100vh - 200px);
+  }
+  .footer_site {
+    position: relative;
+    z-index: 2;
+  }
+}
+
+@media screen and (max-height: 615px) {
+  .playlist.grey {
+    height: calc(100vh - 320px);
+    overflow: auto;
+  }
+}
+
+@media screen and (max-height: 200px) {
+  .container {
+    background-color: #080b12;
+  }
+  .nav,
+  .btn {
+    background-color: #080b1270;
+  }
+  .nav {
+    position: relative;
+    z-index: 3;
+  }
+}
