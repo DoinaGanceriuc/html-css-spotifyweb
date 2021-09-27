@@ -339,8 +339,11 @@ Footer
 }
 
 /* media query 768px */
-
 @media screen and (max-width: 768px) {
+  .btn {
+    font-size: 0.75rem;
+    padding: 0.75rem 2rem;
+  }
   .row {
     padding: 0.5rem;
   }
@@ -348,19 +351,9 @@ Footer
     width: 25%;
     padding: 0.25rem;
   }
-  .footer_left_song {
-    margin: 0 0.5rem;
-  }
-  .footer_middle i,
-  .footer_right i {
-    color: #ffffff;
-    margin: 0 0.75rem;
-  }
-  .play {
-    padding: 0 2rem 1rem 2rem;
-  }
-  .container_albums {
-    flex-wrap: wrap;
+  .col_16,
+  .artists {
+    padding: 0.25rem;
   }
   h2 {
     font-size: 1.3rem;
@@ -369,26 +362,31 @@ Footer
     font-size: 1rem;
     padding: 0.5rem 0;
   }
+  .container_albums {
+    flex-wrap: wrap;
+  }
   .artists p,
   .suggerimenti {
     font-size: 0.7rem;
   }
-  .artists {
-    padding: 0.25rem;
+  .footer_left_song {
+    margin: 0 0.5rem;
   }
-  .btn {
-    font-size: 0.75rem;
-    padding: 0.75rem 2rem;
+  .footer_middle i,
+  .footer_right i {
+    margin: 0 0.75rem;
+  }
+  .play {
+    padding: 0 2rem 1rem 2rem;
   }
 }
 
 /* media query 425px */
-
 @media screen and (max-width: 425px) {
   .nav {
     padding: 0.75rem 0.5rem 0 0;
   }
-  button.btn {
+  .btn {
     font-size: 0.5rem;
   }
   .col_16 {
@@ -398,11 +396,12 @@ Footer
     padding: 0.6rem 0.2rem;
     font-size: 0.6rem;
   }
+  .menu ul li,
+  .artists p {
+    font-size: 0.6rem;
+  }
   i.far.fa-play-circle.fa-3x {
     font-size: 2rem;
-  }
-  .play {
-    padding: 0 0.25rem 0.5rem 0.25rem;
   }
   .artists {
     text-align: center;
@@ -416,10 +415,7 @@ Footer
     padding-bottom: 0.75rem;
     font-size: 0.75rem;
   }
-  .artists p {
-    font-size: 0.6rem;
-  }
-  .footer_left_song {
+  .footer_middle i {
     margin: 0 0.5rem;
   }
   .footer_left h4 {
@@ -432,10 +428,10 @@ Footer
   i.far.fa-heart.white {
     margin: 0 0.5rem 0.25rem;
   }
-  .footer_middle i {
-    margin: 0 0.5rem;
+  .play {
+    padding: 0 0.25rem 0.5rem 0.25rem;
   }
-  .play.flex,
+  .play,
   .footer_right {
     font-size: 0.8rem;
   }
@@ -452,5 +448,64 @@ Footer
   }
   .footer_right .full_progressbar {
     width: 3rem;
+  }
+}
+/* media query 375px */
+@media screen and (max-width: 375px) {
+  .site_bar {
+    padding: 0.3rem;
+  }
+  .personal_settings p,
+  .profile p,
+  hr,
+  i.fas.fa-plus-square.fa-3x {
+    display: none;
+  }
+  .personal_settings,
+  .profile,
+  .home,
+  .search {
+    padding: 0;
+  }
+  .logo_spotify,
+  .icons img,
+  .icons .svg,
+  .footer_site img {
+    height: 25px;
+  }
+  .logo_spotify,
+  .home,
+  .search {
+    margin: 0 0 1rem 0;
+  }
+  .icons img,
+  .icons .svg,
+  .footer_site img {
+    width: 25px;
+  }
+  .icons img,
+  .icons .svg,
+  .footer_site img,
+  .icon {
+    margin-right: 0;
+  }
+  .flex.icons.grey.white,
+  .flex.icons.grey.user {
+    justify-content: center;
+  }
+  .download {
+    width: 15px;
+    margin: 1rem 0;
+  }
+  .download,
+  .icon svg {
+    height: 15px;
+  }
+  .icon {
+    height: 20px;
+    width: 20px;
+  }
+  .footer_site {
+    padding: 0 0.3rem;
   }
 }
