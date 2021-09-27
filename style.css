@@ -381,3 +381,76 @@ Footer
     padding: 0.75rem 2rem;
   }
 }
+
+/* media query 425px */
+
+@media screen and (max-width: 425px) {
+  .nav {
+    padding: 0.75rem 0.5rem 0 0;
+  }
+  button.btn {
+    font-size: 0.5rem;
+  }
+  .col_16 {
+    width: 50%;
+  }
+  .menu ul li {
+    padding: 0.6rem 0.2rem;
+    font-size: 0.6rem;
+  }
+  i.far.fa-play-circle.fa-3x {
+    font-size: 2rem;
+  }
+  .play {
+    padding: 0 0.25rem 0.5rem 0.25rem;
+  }
+  .artists {
+    text-align: center;
+    padding: 0.25rem 0.1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    padding: 0.25rem;
+  }
+  h3 {
+    padding-bottom: 0.75rem;
+    font-size: 0.75rem;
+  }
+  .artists p {
+    font-size: 0.6rem;
+  }
+  .footer_left_song {
+    margin: 0 0.5rem;
+  }
+  .footer_left h4 {
+    font-size: 0.4rem;
+  }
+  .footer_left_icons {
+    display: flex;
+    flex-direction: column;
+  }
+  i.far.fa-heart.white {
+    margin: 0 0.5rem 0.25rem;
+  }
+  .footer_middle i {
+    margin: 0 0.5rem;
+  }
+  .play.flex,
+  .footer_right {
+    font-size: 0.8rem;
+  }
+  .time p {
+    padding: 0 0.25rem 0 0.25rem;
+  }
+  .footer_right i {
+    margin: 0 0.25rem;
+  }
+  .footer_right .full_progressbar,
+  .progressbar,
+  .full_progressbar {
+    height: 3px;
+  }
+  .footer_right .full_progressbar {
+    width: 3rem;
+  }
+}
