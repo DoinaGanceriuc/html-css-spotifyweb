@@ -39,7 +39,7 @@ img,
   fill: #595959;
 }
 .svg .user path {
-  fill: white;
+  fill: #ffffff;
 }
 .self {
   align-self: center;
@@ -114,10 +114,10 @@ Main
 }
 .btn {
   background-color: #080b12;
-  color: white;
+  color: #ffffff;
   padding: 1rem 2rem;
   border-radius: 2rem;
-  border: 2px solid white;
+  border: 2px solid #ffffff;
 }
 .btn:hover,
 .bigger_play:hover {
@@ -160,7 +160,6 @@ Main
 .menu ul li {
   font-size: 0.8rem;
 }
-
 .list_playlist ul,
 .menu ul {
   list-style: none;
@@ -190,7 +189,7 @@ Main
   color: #a3a3a3;
 }
 .grey .user p {
-  color: white;
+  color: #ffffff;
 }
 .icon {
   height: 25px;
@@ -204,7 +203,7 @@ Main
   width: 100%;
 }
 p.self.size.name {
-  color: white;
+  color: #ffffff;
 }
 hr {
   margin: 0.5rem;
@@ -222,7 +221,7 @@ hr {
   background-color: #141922;
   width: 100%;
   height: calc(100vh - 20vh);
-  color: white;
+  color: #ffffff;
   overflow: auto;
   overflow-x: hidden;
 }
