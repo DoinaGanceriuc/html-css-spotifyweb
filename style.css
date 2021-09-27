@@ -10,7 +10,7 @@ body {
 }
 /* debug */
 .debug .container {
-  background-color: blue;
+  background-color: darkblue;
 }
 .debug .main_site {
   background-color: darkmagenta;
@@ -62,8 +62,9 @@ img,
   padding: 1rem;
 }
 h2,
-h3 {
-  padding-bottom: 1rem;
+h3,
+.suggerimenti {
+  padding: 0.5rem;
 }
 .col_16 {
   width: 16.66%;
@@ -73,6 +74,18 @@ h3 {
 .album {
   width: 100%;
 }
+.white:hover p,
+.white:hover .svg path,
+.white:hover .download path {
+  color: #ffffff;
+  fill: #ffffff;
+}
+.white:hover,
+.white:hover i {
+  cursor: pointer;
+  color: #ffffff;
+}
+
 /********************
 Main
 *********************/
@@ -103,6 +116,11 @@ Main
   padding: 1rem 2rem;
   border-radius: 2rem;
   border: 2px solid white;
+}
+.btn:hover,
+.bigger_play:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .personal_settings,
 .profile {
@@ -141,11 +159,11 @@ Main
   padding: 0.5rem 0;
 }
 .playlist .secondary_title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #ffffff;
 }
 .playlist .self {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 900;
 }
 .grey i {
@@ -183,9 +201,9 @@ hr {
 }
 .songs {
   background-color: #141922;
-  color: white;
-  height: calc(100vh - 20vh);
   width: 100%;
+  height: calc(100vh - 20vh);
+  color: white;
   overflow: auto;
 }
 .menu {
@@ -210,8 +228,25 @@ hr {
   font-size: 0.8rem;
   color: #595959;
 }
-.suggerimenti {
-  padding-bottom: 0.5rem;
+.hidden_albums {
+  position: relative;
+}
+.hidden_play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.479);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.hidden_albums:hover .hidden_play {
+  visibility: visible;
+  cursor: pointer;
 }
 /********************
 Footer
@@ -241,6 +276,11 @@ Footer
 .footer_left p {
   font-size: 0.7rem;
   color: #595959;
+}
+.footer_left p:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  cursor: pointer;
 }
 .footer_left i {
   margin: 0 0.5rem;
@@ -275,6 +315,7 @@ Footer
   width: 25%;
 }
 .hidden_progressbar {
+  /* background-color: #5a5a5a; */
   position: absolute;
   top: 50%;
   left: 25%;
@@ -290,7 +331,6 @@ Footer
   background-color: #ffffff;
   border-radius: 50%;
 }
-
 .footer_right .full_progressbar {
   width: 5rem;
 }
