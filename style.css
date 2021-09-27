@@ -98,10 +98,11 @@ Main
   height: calc(100vh - 10vh);
   justify-content: space-between;
   flex-direction: column;
+  width: 150px;
 }
-/* .site_right {
-  width: calc(100% - 10%);
-} */
+.site_right {
+  width: calc(100% - 150px);
+}
 
 /* nav */
 .nav {
@@ -150,13 +151,30 @@ Main
 .search {
   padding: 1rem 0;
 }
-.grey p {
+.grey p,
+.list_playlist li,
+.menu ul li {
   color: #595959;
+}
+.list_playlist li,
+.menu ul li {
+  font-size: 0.8rem;
+}
+
+.list_playlist ul,
+.menu ul {
+  list-style: none;
+}
+.menu ul li {
+  display: inline-block;
+  padding: 0.5rem;
+  font-weight: 900;
 }
 .playlist {
   margin-top: 1rem;
 }
-.playlist p {
+.playlist p,
+.list_playlist li {
   padding: 0.5rem 0;
 }
 .playlist .secondary_title {
@@ -210,16 +228,6 @@ hr {
 }
 .menu {
   text-align: center;
-}
-.menu ul {
-  list-style: none;
-}
-.menu ul li {
-  display: inline-block;
-  padding: 0.5rem;
-  color: #595959;
-  font-size: 0.8rem;
-  font-weight: 900;
 }
 .artists {
   text-align: center;
@@ -318,7 +326,6 @@ Footer
   width: 25%;
 }
 .hidden_progressbar {
-  /* background-color: #5a5a5a; */
   position: absolute;
   top: 50%;
   left: 25%;
@@ -454,11 +461,15 @@ Footer
 @media screen and (max-width: 375px) {
   .site_bar {
     padding: 0.3rem;
+    width: 35px;
+    align-items: center;
   }
   .personal_settings p,
   .profile p,
   hr,
-  i.fas.fa-plus-square.fa-3x {
+  i.fas.fa-plus-square.fa-3x,
+  .secondary_title,
+  .list_playlist li {
     display: none;
   }
   .personal_settings,
@@ -504,6 +515,9 @@ Footer
   .icon {
     height: 20px;
     width: 20px;
+  }
+  .site_right {
+    width: 100%;
   }
   .footer_site {
     padding: 0 0.3rem;
