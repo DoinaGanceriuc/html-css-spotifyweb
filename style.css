@@ -99,9 +99,9 @@ Main
   justify-content: space-between;
   flex-direction: column;
 }
-.site_right {
+/* .site_right {
   width: calc(100% - 10%);
-}
+} */
 /* nav */
 .nav {
   height: calc(100vh - 90vh);
@@ -333,4 +333,48 @@ Footer
 }
 .footer_right .full_progressbar {
   width: 5rem;
+}
+
+/* media query 768px */
+
+@media screen and (max-width: 768px) {
+  .row {
+    padding: 0.5rem;
+  }
+  .col_16 {
+    width: 25%;
+    padding: 0.25rem;
+  }
+  .footer_left_song {
+    margin: 0 0.5rem;
+  }
+  .footer_middle i,
+  .footer_right i {
+    color: #ffffff;
+    margin: 0 0.75rem;
+  }
+  .play {
+    padding: 0 2rem 1rem 2rem;
+  }
+  .container_albums {
+    flex-wrap: wrap;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  h3 {
+    font-size: 1rem;
+    padding: 0.5rem 0;
+  }
+  .artists p,
+  .suggerimenti {
+    font-size: 0.7rem;
+  }
+  .artists {
+    padding: 0.25rem;
+  }
+  .btn {
+    font-size: 0.75rem;
+    padding: 0.75rem 2rem;
+  }
 }
