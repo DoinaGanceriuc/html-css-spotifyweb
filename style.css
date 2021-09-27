@@ -6,7 +6,7 @@
 }
 body {
   font-family: "Montserrat", sans-serif;
-  overflow-y: hidden;
+  overflow: hidden;
 }
 /* debug */
 .debug .container {
@@ -102,6 +102,7 @@ Main
 /* .site_right {
   width: calc(100% - 10%);
 } */
+
 /* nav */
 .nav {
   height: calc(100vh - 90vh);
@@ -205,6 +206,7 @@ hr {
   height: calc(100vh - 20vh);
   color: white;
   overflow: auto;
+  overflow-x: hidden;
 }
 .menu {
   text-align: center;
@@ -251,9 +253,10 @@ hr {
 /********************
 Footer
 *********************/
+
 .footer_site {
   height: calc(100vh - 90vh);
-  width: 100vw;
+  /* width: 100vw; */
   background-color: #282828;
   align-items: center;
   padding: 1rem 0.5rem;
